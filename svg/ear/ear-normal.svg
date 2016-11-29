@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<!-- Created by SVGDeveloper 1.0 -->
+<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="ear" transform="matrix(0.446,0,0,0.442,-51.27758,-39.73814)">
+		<g id="leftear">
+			<path id="leftInnerEar" d="M 229.32837,283.89543 C 229.32837,283.89543 208.97386,256.02823 216.96291,305.81931 C 224.95197,355.61040 236.05550,319.84013 236.05550,319.84013 C 236.05550,319.84013 234.50124,307.78391 234.50124,307.78391" sodipodi:nodetypes="cscc" style="fill:#e5d994;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.45361960px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" />
+			<path id="leftEarFlap" d="M 233.13484,277.99394 C 233.13484,277.99394 206.70950,252.40687 214.69856,302.19794 C 222.68761,351.98903 233.64751,340.01879 233.64751,340.01879 C 233.64751,340.01879 236.51193,339.21814 237.33147,334.53436 C 237.42475,316.78372 234.84372,316.63340 229.92737,324.24038 C 225.01103,331.84734 224.53125,322.94423 224.53125,322.94423 C 224.53125,322.94423 209.78222,281.45165 217.77128,280.06857 C 225.76033,278.68549 229.44759,287.67555 229.44759,287.67555" sodipodi:nodetypes="csccscsc" style="fill:#e5d994;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.85400000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;stroke-miterlimit:4.0000000;stroke-dasharray:none" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" />
+		</g>
+		<g id="rightear">
+			<path id="rightInnerEar" d="M 436.51395,281.72853 C 436.51395,281.72853 458.67483,253.86133 449.97678,303.65241 C 441.27874,353.44350 429.18983,317.67323 429.18983,317.67323 C 429.18983,317.67323 430.88202,305.61701 430.88202,305.61701" sodipodi:nodetypes="cscc" style="fill:#e5d994;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.47332004px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" />
+			<path id="rightEarFlap" d="M 434.65327,273.45910 C 434.65327,273.45910 456.46822,247.87203 449.87300,297.66310 C 443.27779,347.45419 434.23004,335.48395 434.23004,335.48395 C 434.23004,335.48395 431.86538,334.68330 431.18882,329.99952 C 431.11181,312.24888 433.24254,312.09856 437.30114,319.70554 C 441.35973,327.31250 441.75580,318.40939 441.75580,318.40939 C 441.75580,318.40939 453.93159,276.91681 447.33637,275.53373 C 440.74116,274.15065 437.69721,283.14071 437.69721,283.14071" sodipodi:nodetypes="csccscsc" style="fill:#e5d994;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.77593374;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.0000000;stroke-dasharray:none;stroke-opacity:1.0000000" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" />
+		</g>
+	</g>
+
+
+</svg>

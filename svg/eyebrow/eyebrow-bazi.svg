@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<!-- Created by SVGDeveloper 1.0 -->
+<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="eyebrow">
+		<g id="eyeBrowLeft" transform="matrix(0.4519999,0,0,0.216,-51.80458,13.54577)" xmlns="http://www.w3.org/2000/svg">
+		<path id="leftEyeBrow" d="M 307.94524,247.20445 C 295.24241,239.58410 277.53849,240.15372 256.63648,249.95120 L 252.29329,259.10709 C 276.27445,248.20348 287.70921,246.88537 306.74756,257.76679 L 307.94524,247.20445 z " sodipodi:nodetypes="ccccc" style="fill:#000000;fill-opacity:1.0000000;fill-rule:nonzero;stroke:none;stroke-width:1.0000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000" transform="matrix(0.6969999,-0.7329999,0.1529999,0.6349999,42.30769,306.2579)" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" />
+	</g>
+		<g id="eyeBrowRight" transform="matrix(0.4519999,0,0,0.216,-51.80458,13.54577)" xmlns="http://www.w3.org/2000/svg">
+		<path id="rightEyeBrow" d="M 400.36604,252.05101 C 386.37657,246.37400 369.06622,246.97147 350.41207,254.61588 L 347.92734,261.61873 C 369.39542,253.10459 380.39028,251.99614 401.25154,260.09422 L 400.36604,252.05101 z " sodipodi:nodetypes="ccccc" style="fill:#000000;fill-opacity:1.0000000;fill-rule:nonzero;stroke:none;stroke-width:1.0000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000" transform="matrix(0.698,0.681,-0.202,0.906,164.745,-231.342)" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" />
+	</g>
+	</g>
+
+</svg>

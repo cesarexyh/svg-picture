@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<script src="scripts/jquery-1.11.1.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+	<script src="Snap.svg/dist/snap.svg.js"></script>
+	<!-- <script src="scripts/modernizr.js"></script> -->
+	<script src="scripts/main.js"></script>
+	<!-- <script src="scripts/JS.js"></script> -->
+	<title>SVG卡通图生成</title>
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->	
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="srM-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">SVG卡通人脸生成</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown-toggle">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							文件
+						<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a id="to-svg" href="javascript:javascript: (function () { var e = document.createElement('script'); e.setAttribute('src', 'https://nytimes.github.io/svg-crowbar/svg-crowbar.js'); e.setAttribute('class', 'svg-crowbar'); document.body.appendChild(e); })();">导出svg</a>
+							</li>
+							<li>
+								<a href="#" id="edit">编辑</a>
+							</li>
+							<li>
+								<a href="#" id="request">请求</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>					
+			</nav>
+			<article class="article-column">
+			<ul class="cd-accordion-menu animated">
+				<li class="has-children">
+					<input type="checkbox" name ="group-1" id="group-1" checked>
+					<label for="group-1">脸部</label>
+
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-1" id="sub-group-1">
+							<label for="sub-group-1">脸型选择</label>
+
+							<ul>
+								<li><a href="#0" id="face-circle">圆脸</a></li>
+								<li><a href="#0" id="face-guazi">瓜子脸</a></li>
+								<li><a href="#0" id="face-shouchang">瘦长脸</a></li>
+							</ul>
+						</li>
+
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-2" id="sub-group-2">
+							<label for="sub-group-2">大小调节</label>
+
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>面部宽度</h4>
+									<div class="sec-scroll"><input type="range" id="faceSet" min="0.95" max="2.0" step="0.005" value="1"></div></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="has-children">
+					<input type="checkbox" name ="group-2" id="group-2">
+					<label for="group-2">头发</label>
+
+					
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-3" id="sub-group-3">
+							<label for="sub-group-3">发型选择</label>
+							<ul>
+								<li><a href="#0" id="hair-long">长发</a></li>
+								<li><a href="#0" id="hair-short">短发</a></li>
+								<li><a href="#0" id="hair-none">秃头</a></li>
+							</ul>
+						</li>
+
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-15" id="sub-group-15">
+							<label for="sub-group-15">发型颜色</label>
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>发型颜色</h4>
+									<div class="sec-scroll"><input type="color" id="hairColor" value="#71270a"></div></li>
+							</ul>
+						</li>
+
+					</ul>
+				</li>
+
+				<li class="has-children">
+					<input type="checkbox" name ="group-3" id="group-3">
+					<label for="group-3">眉毛</label>
+				<ul>
+					<li class="has-children">
+							<input type="checkbox" name ="sub-group-5" id="sub-group-5">
+							<label for="sub-group-5">眉毛选择</label>
+							<ul>
+								<li><a href="#0" id="eyebrow-sword">剑眉</a></li>
+								<li><a href="#0" id="eyebrow-bazi">八字眉</a></li>
+								<li><a href="#0" id="eyebrow-normal">普通眉</a></li>
+							</ul>
+						</li>
+
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-6" id="sub-group-6">
+							<label for="sub-group-6">眉毛旋转</label>
+
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>旋转角度</h4>
+									<div class="sec-scroll"><input type="range" id="eyeBrowRotate" min="-180" max="180" step="2" value="1"></div></li>
+							</ul>
+						</li>
+
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-7" id="sub-group-7">
+							<label for="sub-group-7">眉毛位置</label>
+
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>眉毛位置</h4>
+									<div class="sec-scroll"><input type="range" id="eyeBrowPosition" min="-20" max="25" step="0.005" value="1"></div></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="has-children">
+					<input type="checkbox" name ="group-4" id="group-4">
+					<label for="group-4">眼睛</label>
+
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-8" id="sub-group-8">
+							<label for="sub-group-8">眼睛选择</label>
+
+							<ul>
+								<li><a href="#0" id="eye-triangle">三角眼</a></li>
+								<li><a href="#0" id="eye-danfeng">丹凤眼</a></li>
+								<li><a href="#0" id="eye-circle">圆眼</a></li>
+							</ul>
+						</li>
+
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-9" id="sub-group-9">
+							<label for="sub-group-9">大小调节</label>
+
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>眼睛大小</h4>
+									<div class="sec-scroll"><input type="range" id="eyeSet" min="0.15" max="1.25" step="0.005" value="1"></div></li>
+							</ul>
+						</li>
+					</ul>
+
+					
+				</li>
+
+				<li class="has-children">
+					<input type="checkbox" name ="group-5" id="group-5">
+					<label for="group-5">耳朵</label>
+
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-16" id="sub-group-16">
+							<label for="sub-group-16">耳朵选择</label>
+
+							<ul>
+								<li><a href="#" id="ear-normal">普通耳</a></li>
+								<li><a href="#" id="ear-long">长耳</a></li>
+								<li><a href="#" id="ear-jingling">精灵耳</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+				</li>
+				<li class="has-children">
+					<input type="checkbox" name ="group-6" id="group-6">
+					<label for="group-6">鼻子</label>
+
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-11" id="sub-group-11">
+							<label for="sub-group-11">鼻子选择</label>
+
+							<ul>
+								<li><a href="#0" id="nose-normal">普通鼻</a></li>
+								<li><a href="#0" id="nose-expand">张大</a></li>
+								<li><a href="#0" id="nose-yinggou">鹰钩鼻</a></li>
+							</ul>
+						</li>
+
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-12" id="sub-group-12">
+							<label for="sub-group-12">鼻子调整</label>
+
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>鼻子大小</h4>
+									<div class="sec-scroll"><input type="range" id="noseSet" min="0.5" max="2" step="0.01" value="1"></div></li>
+							</ul>
+
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>鼻子位置</h4>
+									<div class="sec-scroll"><input type="range" id="noseSetPosition" min="-5" max="10" step="0.1" value="1"></div></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="has-children">
+					<input type="checkbox" name ="group-7" id="group-7">
+					<label for="group-7">嘴巴</label>
+
+					<ul>
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-13" id="sub-group-13">
+							<label for="sub-group-13">嘴巴选择</label>
+
+							<ul>
+								<li><a href="#" id="mouth-smile">微笑</a></li>
+								<li><a href="#" id="mouth-sad">难过</a></li>
+								<li><a href="#" id="mouth-normal">正常</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name ="sub-group-14" id="sub-group-14">
+							<label for="sub-group-14">嘴角弧度</label>
+
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>嘴巴表情</h4>
+									<div class="sec-scroll"><input type="range" id="mouthSet" min="0.38" max="1.10" step="0.005" value="1"></div></li>
+							</ul>
+
+							<ul>
+								<li class="has-children">
+									<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+									
+								</li>
+								<li class="scroll"><h4>嘴巴位置</h4>
+									<div class="sec-scroll"><input type="range" id="mouthPosition" min="0" max="16" step="0.005" value="1"></div></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+	<div class="canvas">
+	<table>
+			<tr>
+				<td>
+					<div class="append">
+						<div class="svg-container" id=" svg-0"></div>
+					</div>
+				</td>
+				<td>
+					<div class="append">
+						<div class="svg-container" id="svg-1"></div>
+					</div>
+				</td>
+				<td>
+					<div class="append">
+						<div class="svg-container" id="svg-2"></div>
+					</div>					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="append">
+						<div class="svg-container" id="svg-3"></div>
+					</div>
+				</td>
+				<td>
+					<div class="append">
+						<div class="svg-container" id="svg-4"></div>
+					</div>
+				</td>
+				<td>
+					<div class="append">
+						<div class="svg-container" id="svg-5"></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="append">
+						<div class="svg-container" id="svg-6"></div>
+					</div>
+				</td>
+				<td>
+					<div class="append">
+						<div class="svg-container" id="svg-7"></div>
+					</div>
+				</td>
+				<td>
+					<div class="append">
+						<div class="svg-container" id="svg-8"></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	
+
+	</div>
+	</article>
+</body>
+</html>
