@@ -216,6 +216,17 @@ $(document).ready(function(){
 			});
 
 	});
+	$('#request').on('click', function(event) {
+		$.ajax({
+			url: 'http://192.168.3.110:3000/',
+			type:'GET',	
+			dataType: 'html',
+			success:function (content) {
+				console.log(content);
+			}
+		});
+		
+	});
 
 	//脸部微调整
 	$('#faceSet').on('input change', function(event) {
