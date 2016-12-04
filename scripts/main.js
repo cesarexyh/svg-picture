@@ -216,13 +216,20 @@ $(document).ready(function(){
 			});
 
 	});
+
+	//存储你骂了隔壁的数据
 	$('#request').on('click', function(event) {
+		var data_json={};
+		$('.svg-container').each(function(index, el) {
+			data_json['svg'+index]=$(el).html();
+		});
+		console.log(data_json);
 		$.ajax({
-			url: 'http://192.168.3.110:3000/',
-			type:'GET',	
-			dataType: 'html',
+			url: 'http://localhost:3000',
+			type:'POST',
+			data: data_json,	
 			success:function (content) {
-				console.log(content);
+				// console.log('123');
 			}
 		});
 		
